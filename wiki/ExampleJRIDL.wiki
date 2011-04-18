@@ -1,0 +1,62 @@
+#labels Example,JRIDL,JSON,RMI,RPC
+{{{
+
+{
+   "objects":{
+      "Address":{
+         "email":"String",
+         "firstname":"String",
+         "lastname":"String",
+         "street":"String",
+         "city":"String"
+      }
+   },
+   "methods":{
+      "start":{
+         "returns":"void",
+         "parameter":[
+
+         ]
+      },
+      "status":{
+         "returns":"String",
+         "parameter":[
+
+         ]
+      },
+      "echo":{
+         "returns":"String",
+         "parameter":[
+            {
+               "msg":"String"
+            }
+         ]
+      },
+      "createAddress":{
+         "returns":"void",
+         "parameter":[
+            {
+               "address":"Address"
+            }
+         ]
+      },
+      "getAddress":{
+         "returns":"Address",
+         "parameter":[
+            {
+               "email":"String"
+            }
+         ]
+      },
+      "deleteAddress":{
+         "returns":"void",
+         "parameter":[
+            {
+               "email":"String"
+            }
+         ]
+      }
+   }
+}
+
+}}}
