@@ -1,0 +1,11 @@
+#labels Example,Tutorial,JRIDL
+{{{
+
+public class ReadJRIDL {
+	public static void main(String[] args) throws Exception {
+		JRIDL j = new JRIDL( "MyService", "myservice.jsdl");
+		j.gen("src/gen/");
+	}
+}
+
+}}}
