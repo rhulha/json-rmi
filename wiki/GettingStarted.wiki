@@ -20,7 +20,7 @@ public class TestServer {
 
 {{{
 
-public class TestClient2 {
+public class TestClient {
 	public static void main(String[] args) throws IllegalArgumentException, IOException {
 		MyService msc = JSON_RMI.getClient(MyService.class);
 		System.out.println( msc.status());
