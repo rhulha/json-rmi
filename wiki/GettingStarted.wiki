@@ -1,6 +1,4 @@
 #labels Tutorial,Example
-#Getting Started
-
 = Starting a Server =
 
 {{{
