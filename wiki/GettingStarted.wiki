@@ -1,0 +1,32 @@
+#labels Tutorial,Example
+#Getting Started
+
+= Starting a Server =
+
+{{{
+public class TestServer {
+	public static void main(String[] args) throws IOException {
+		ServerSocket ss = new ServerSocket(25001);
+		System.out.println("JSDL SERVER started");
+		while (true) {
+			new Thread(new JSON_RMI(ss.accept(), new MyServiceImpl())).start();
+		}
+	}
+}
+}}}
+
+
+= Starting a Client =
+
+{{{
+
+public class TestClient2 {
+	public static void main(String[] args) throws IllegalArgumentException, IOException {
+		MyService msc = JSON_RMI.getClient(MyService.class);
+		System.out.println( msc.status());
+		JSON_RMI ih = (JSON_RMI) Proxy.getInvocationHandler(msc);
+		ih.close();
+	}
+}
+
+}}}
