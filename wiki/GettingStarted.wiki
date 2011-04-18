@@ -18,7 +18,7 @@ public class ReadJRIDL {
 public class TestServer {
 	public static void main(String[] args) throws IOException {
 		ServerSocket ss = new ServerSocket(25001);
-		System.out.println("JSDL SERVER started");
+		System.out.println("JSON-RMI SERVER started");
 		while (true) {
 			new Thread(new JSON_RMI(ss.accept(), new MyServiceImpl())).start();
 		}
