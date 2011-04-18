@@ -1,4 +1,17 @@
 #labels Tutorial,Example
+= Generating Java code from a JRIDL =
+
+{{{
+
+public class ReadJRIDL {
+        public static void main(String[] args) throws Exception {
+                JRIDL j = new JRIDL( "MyService", "myservice.jridl");
+                j.gen("src/gen/");
+        }
+}
+
+}}}
+
 = Starting a Server =
 
 {{{
