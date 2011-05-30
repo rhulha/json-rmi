@@ -1,4 +1,12 @@
 #labels Tutorial,Example
+First open [JSON_RMI] and [JRIDL]
+and copy the class texts. Paste them into new classes in your favorite
+IDE. Adapt the package declaration if you need to.
+
+Then write a jridl file.
+You can get inspiration from:
+[ExampleJRIDL]
+
 = Generating Java code from a JRIDL =
 
 {{{
