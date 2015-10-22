@@ -1,5 +1,6 @@
 #labels JSON,RPC,RMI
-{{{
+
+```Java
 
 package org.json.rmi;
 
@@ -276,4 +277,4 @@ public class JSON_RMI implements InvocationHandler, Runnable {
 	}
 }
 
-}}}
+```
