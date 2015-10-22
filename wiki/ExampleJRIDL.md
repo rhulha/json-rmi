@@ -1,5 +1,5 @@
 #labels Example,JRIDL,JSON,RMI,RPC
-
+```JSON
 
       {
          "objects":{
@@ -59,3 +59,4 @@
          }
       }
 
+```
